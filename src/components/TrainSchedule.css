@@ -1,0 +1,104 @@
+.train-schedule {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.train-list {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 500px; /* Adjust this width as necessary */
+}
+
+.travel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.travel-item:last-child {
+  border-bottom: none;
+}
+
+.travel-item.selected {
+  background-color: #f0f0f0;
+}
+
+.travel-item .travel-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.time-and-platform,
+.platform-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px; /* Adjust the gap as needed */
+  flex: 1;
+}
+
+.train-number {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  background-color: #eaeaea;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-right: auto; /* Push everything else to the right */
+}
+
+.travel-duration {
+  font-size: 0.9em;
+  color: #666;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 20px; /* Give some space on both sides */
+}
+
+.departure-time,
+.arrival-time {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.platform-details span {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.prices-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-left: auto; /* Push the button to the right */
+}
+
+.prices-btn:hover {
+  background-color: #0056b3;
+}
+
+/* This centers the entire .train-schedule inside its parent, if needed */
+.train-schedule-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
